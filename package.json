@@ -7,11 +7,13 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "stompjs": "^2.3.3",
     "umi": "^4.0.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "@types/stompjs": "^2.3.5",
     "typescript": "^4.1.2"
   }
 }
