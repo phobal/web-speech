@@ -1,10 +1,11 @@
 import Stomp from "stompjs";
 import speech from "./speech";
 import notice from "./notice";
+import { ding } from "./ding";
 
 let client: any = null;
 const url = "ws://127.0.0.1:61614/stomp";
-
+// const isPlay = canPlay();
 const connect = () => {
   client = Stomp.client(url);
   client.heartbeat.outgoing = 0;
@@ -23,6 +24,7 @@ const connect = () => {
             console.log(data);
             speech.say(data);
             notice(data);
+            ding();
           }
         },
         { id: "importMessage" }
