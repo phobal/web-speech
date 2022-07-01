@@ -1,5 +1,6 @@
 import Stomp from "stompjs";
 import speech from "./speech";
+import notice from "./notice";
 
 let client: any = null;
 const url = "ws://127.0.0.1:61614/stomp";
@@ -21,6 +22,7 @@ const connect = () => {
           if (data) {
             console.log(data);
             speech.say(data);
+            notice(data);
           }
         },
         { id: "importMessage" }

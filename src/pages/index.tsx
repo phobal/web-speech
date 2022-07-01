@@ -1,5 +1,6 @@
 import React from "react";
 import connect, { disConnect } from "./socket";
+import 'antd/dist/antd.css'
 
 export default function HomePage() {
   React.useEffect(() => {

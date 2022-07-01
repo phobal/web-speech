@@ -7,6 +7,8 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "antd": "^4.21.4",
     "stompjs": "^2.3.3",
     "umi": "^4.0.2"
   },
